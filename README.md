@@ -1,41 +1,43 @@
-# &lt;my-element&gt;
+# &lt;a-dot&gt;
 
-TODO: Write a project description
+[Dot](http://www.graphviz.org/content/dot-language) graph visualization component for Polymer
 
-> Maintained by [Your Name](https://github.com/yourname).
+> Maintained by [Cong Liu](https://github.com/ghostoy).
 
 ## Demo
 
-> [Check it live](http://customelements.github.io/boilerplate-element).
+> [Check it live](http://ghostoy.github.io/a-dot).
 
 ## Usage
 
 1. Import Web Components' polyfill:
 
 	```html
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130711/polymer.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20131107/polymer.min.js"></script>
 	```
-
-2. Import Custom Element:
+2. Import vis.js:
 
 	```html
-	<link rel="import" href="src/my-element.html">
+	<script src="//visjs.org/vis.js"></script>
 	```
 
-3. Start using it!
+3. Import Custom Element:
 
 	```html
-	<my-element></my-element>
+	<link rel="import" href="src/a-dot.html">
+	```
+
+4. Start using it!
+
+	```html
+	<a-dot dot="digraph {1 -> 1 -> 2; 2 -> 3; 2 -- 4; 2 -> 1 }"></a-dot>
 	```
 
 ## Options
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi` 	   | `foo`               | Lorem ipsum
-`height`   | *int*                     | `100`               | Lorem ipsum
-
+`dot`      | *string*                  | `""`                | Dot graph
 
 ## Contributing
 

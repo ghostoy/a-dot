@@ -2,18 +2,19 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>&lt;my-element&gt;</title>
+	<title>&lt;a-dot&gt;</title>
 
 	<!-- Importing Web Component's Polyfill -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130711/polymer.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20131107/polymer.min.js"></script>
+	<script src="//visjs.org/vis.js"></script>
 
 	<!-- Importing Custom Elements -->
-	<link rel="import" href="src/my-element.html">
+	<link rel="import" href="src/a-dot.html">
 </head>
 <body>
 
 	<!-- Using Custom Elements -->
-	<my-element></my-element>
+	<a-dot style="width:300px;height:400px;" dot="digraph {1 -> 1 -> 2; 2 -> 3; 2 -- 4; 2 -> 1 }"></a-dot>
 
 </body>
 </html>
