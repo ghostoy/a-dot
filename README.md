@@ -54,4 +54,4 @@ Attribute  | Options                   | Default             | Description
 
 ## License
 
-[MIT License](http://opensource.org/licenses/MIT)
+[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
