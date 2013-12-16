@@ -1,0 +1,34 @@
+<polymer-element name="a-dot"
+		 attributes="dot">
+	<template>
+	<style>
+	:host {
+		display: block;
+	}
+	</style>
+	<div id="container">
+	</div>
+	</template>
+
+	<script>
+		Polymer('a-dot', {
+			_data: {
+				dot: ''
+			},
+			get dot() {
+				return this._data.dot;
+			},
+			set dot(v) {
+				this._data.dot = v;
+			},
+			dotChanged: function() {
+				this._graph.setData(this._data);
+			},
+			ready: function() {
+				var data = this._data;
+				var graph = this._graph = new vis.Graph(this.$.container, data);
+			}
+		});
+	</script>
+
+</polymer-element>
