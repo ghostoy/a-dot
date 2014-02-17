@@ -5,8 +5,9 @@
 	<title>&lt;a-dot&gt;</title>
 
 	<!-- Importing Web Component's Polyfill -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20131107/polymer.min.js"></script>
-	<script src="//visjs.org/dist/vis.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/platform.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/polymer.js"></script>
+	<script src="//rawgithub.com/almende/vis/v0.3.0/dist/vis.min.js"></script>
 
 	<!-- Importing Custom Elements -->
 	<link rel="import" href="src/a-dot.html">
@@ -14,7 +15,14 @@
 <body>
 
 	<!-- Using Custom Elements -->
-	<a-dot style="width:300px;height:400px;" dot="digraph {1 -> 1 -> 2; 2 -> 3; 2 -- 4; 2 -> 1 }"></a-dot>
-
+	<textarea id="dot" style="width:400px;height:300px;">digraph {1 -> 1 -> 2; 2 -> 3; 2 -- 4; 2 -> 1 }</textarea>
+	<br/>
+	<button onclick="draw()">Draw</button>
+	<a-dot style="width:400px;height:300px;" dot="digraph {1 -> 1 -> 2; 2 -> 3; 2 -- 4; 2 -> 1 }"></a-dot>
+	<script>
+	function draw() {
+		document.getElementsByTagName('a-dot')[0].dot = document.getElementById('dot').value;
+	}
+	</script>
 </body>
 </html>
