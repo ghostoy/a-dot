@@ -12,21 +12,15 @@
 
 	<script>
 		Polymer('a-dot', {
-			_data: {
-				dot: ''
-			},
-			get dot() {
-				return this._data.dot;
-			},
-			set dot(v) {
-				this._data.dot = v;
-			},
 			dotChanged: function() {
-				this._graph.setData(this._data);
+				this._graph.setData({
+                    dot: this.dot
+                });
 			},
 			ready: function() {
-				var data = this._data;
-				var graph = this._graph = new vis.Graph(this.$.container, data);
+				this._graph = new vis.Graph(this.$.container, {
+                    dot: this.dot
+                });
 			}
 		});
 	</script>
