@@ -13,12 +13,13 @@
 	<script src="//rawgithub.com/almende/vis/v0.7.0/dist/vis.min.js"></script>
 	<script>
 		Polymer('a-dot', {
+			dot: "",
 			dotChanged: function() {
 				this._graph.setData({
                     dot: this.dot
                 });
 			},
-			ready: function() {
+			domReady: function() {
 				this._graph = new vis.Graph(this.$.container, {
                     dot: this.dot
                 });
