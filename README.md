@@ -13,12 +13,7 @@
 1. Import Web Components' polyfill:
 
 	```html
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20131107/polymer.min.js"></script>
-	```
-2. Import vis.js:
-
-	```html
-	<script src="//visjs.org/vis.js"></script>
+	<script src="../bower_components/platform/platform.js"></script>
 	```
 
 3. Import Custom Element:
@@ -49,6 +44,10 @@ Attribute  | Options                   | Default             | Description
 
 ## History
 
+* v0.0.2 May 22, 2014
+	* Updated polymer to 0.2.3
+	* Updated vis.js to 1.0.1
+	* Updated to use bower version of polymer & vis.js
 * v0.0.1 August 19, 2013
 	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
 

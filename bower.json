@@ -1,0 +1,26 @@
+{
+  "name": "a-dot",
+  "version": "0.0.2",
+  "homepage": "https://ghostoy.github.io/a-dot/",
+  "authors": [
+    "Cong Liu <leehom2001@gmail.com>"
+  ],
+  "description": "Dot graph visualization component for Polymer",
+  "main": "src/a-dot.html",
+  "keywords": [
+    "polymer",
+    "vis.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.2.3",
+    "vis": "~1.0.1"
+  }
+}
