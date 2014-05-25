@@ -16,11 +16,11 @@
 	<script>
 		Polymer('a-dot', {
 			dotChanged: function() {
-				this._graph.setData({
+				this._graph && this._graph.setData({
                     dot: this.dot
                 });
 			},
-			ready: function() {
+			domReady: function() {
 				this._graph = new vis.Graph(this.$.container, {
                     dot: this.dot
                 });
