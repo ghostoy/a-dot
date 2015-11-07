@@ -1,12 +1,12 @@
 {
   "name": "a-dot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://ghostoy.github.io/a-dot/",
   "authors": [
     "Cong Liu <leehom2001@gmail.com>"
   ],
   "description": "Dot graph visualization component for Polymer",
-  "main": "src/a-dot.html",
+  "main": "a-dot.html",
   "keywords": [
     "polymer",
     "vis.js",
