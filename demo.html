@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>&lt;a-dot&gt;</title>
+
+  <!-- Importing Web Component's Polyfill -->
+  <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  <!-- Importing Custom Elements -->
+  <link rel="import" href="a-dot.html">
+</head>
+<body>
+
+  <!-- Using Custom Elements -->
+  <textarea id="dot" style="width:400px;height:300px;">digraph {1 -> 1 -> 2; 2 -> 3; 2 -- 4; 2 -> 1 }</textarea>
+  <br/>
+  <button onclick="draw()">Draw</button>
+  <a-dot style="width:400px;height:300px;" dot="digraph {1 -> 1 -> 2; 2 -> 3; 2 -- 4; 2 -> 1 }"></a-dot>
+  <script>
+  function draw() {
+    document.getElementsByTagName('a-dot')[0].dot = document.getElementById('dot').value;
+  }
+  </script>
+</body>
+</html>

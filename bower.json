@@ -1,6 +1,6 @@
 {
   "name": "a-dot",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "homepage": "https://ghostoy.github.io/a-dot/",
   "authors": [
     "Cong Liu <leehom2001@gmail.com>"
@@ -9,7 +9,8 @@
   "main": "src/a-dot.html",
   "keywords": [
     "polymer",
-    "vis.js"
+    "vis.js",
+    "web-components"
   ],
   "license": "MIT",
   "ignore": [
@@ -20,7 +21,11 @@
     "tests"
   ],
   "dependencies": {
-    "vis": "^3.7.2",
-    "polymer": "^0.5.2"
+    "vis": "~4.9.0",
+    "polymer": "Polymer/polymer#^1.2.0"
+  },
+  "resolutions": {
+    "vis": "~4.9.0",
+    "polymer": "~1.2.1"
   }
 }
