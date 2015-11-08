@@ -1,0 +1,44 @@
+<link rel="import" href="../polymer/polymer.html">
+<script src="../vis/dist/vis.min.js"></script>
+<link href="../vis/dist/vis.css" rel="stylesheet" type="text/css" />
+
+<dom-module id="a-dot">
+	<template>
+	<style>
+	:host {
+		display: block;
+	}
+	#container {
+		width: 100%;
+		height: 100%;
+	}
+	</style>
+	<div id="container">
+	</div>
+	</template>
+
+	<script>
+		Polymer({
+			is: 'a-dot',
+			properties: {
+				dot: {
+					type: String,
+					notify: true
+				}
+			},
+			listeners: {
+				'dot-changed': 'dotChanged'
+			},
+			dotChanged: function() {
+				this._graph && this._graph.setData({
+					dot: this.dot
+				});
+			},
+			ready: function() {
+				var parsedData = vis.network.convertDot(this.dot);
+				this._graph = new vis.Network(this.$.container, parsedData, parsedData.options);
+			}
+		});
+	</script>
+
+</dom-module>
