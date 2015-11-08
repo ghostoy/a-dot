@@ -22,11 +22,19 @@
   ],
   "dependencies": {
     "vis": "~4.9.0",
-    "polymer": "Polymer/polymer#^1.2.0",
-    "a-dot": "~0.1.1"
+    "polymer": "Polymer/polymer#^1.2.0"
   },
   "resolutions": {
     "vis": "~4.9.0",
     "polymer": "~1.2.1"
-  }
+  },
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.1",
+    "commit": "8f8fc15fd689b0c8fed04aa77b8c7d32f3083605"
+  },
+  "_source": "https://github.com/ghostoy/a-dot.git",
+  "_target": "~0.1.1",
+  "_originalSource": "a-dot"
 }

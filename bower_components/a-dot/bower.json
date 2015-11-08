@@ -22,8 +22,7 @@
   ],
   "dependencies": {
     "vis": "~4.9.0",
-    "polymer": "Polymer/polymer#^1.2.0",
-    "a-dot": "~0.1.1"
+    "polymer": "Polymer/polymer#^1.2.0"
   },
   "resolutions": {
     "vis": "~4.9.0",
